@@ -1,6 +1,5 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import useMediaQuery from '@mui/material/useMediaQuery';
 
 interface Youtuber {
     subscribers: number;
@@ -17,8 +16,6 @@ interface BasicCardProps {
 }
 
 export default function BasicCard({ youtuber, index }: BasicCardProps) {
-
-    const matches = useMediaQuery('(min-width:720px)');
 
     return (
         <>
